@@ -12,21 +12,12 @@
 Look at the [ReportingSystemArchitecture.pdf](./ReportingSystemArchitecture.pdf)
 
 ## 3. Make improvement in the code/system level.
-Suggestions:
-0. Add new features like update/delete/edit report.
-1. **Improve sync API performance by using multithreading and sending request concurrently to both services.
-2. Use a database instead of hashmap in the ExcelRepositoryImpl.
-3. Improve code coverage by adding more tests.
-4. Convert sync API into microservices by adding Eureka/Ribbon support.
-5. Add pressure tests to benchmark the system.
-6. Change MongoDB to DynamoDB.
-7. Fix bugs.
-8. Make the system more robust by adding fault tolerance such like : DeadLetter Queue, retry, cache, fallback etc.
-9. Add security and jwt support.
-10. Add more fancy UI using angular/react.
-11. Setup your CI/CD pipeline.
-12. Add new Services like PNGService, JPEGService etc
-13. ...
+1. I add multi thread on the function  direct create report function and delete function
+2. add lambda function on aws to sent email and trigger by sqs event
+3 delete feature : add Ajax function on delete button in fronted end 
+4  add delete url  will delete the corresponding report from s3, local, and h2, mongoldb
+5 add api to get all excel file 
+6 change hash map to mongodb
 
 ## 4. Send your code to [Dawei Zhuang(dawei.zhuang@antra.com)](dawei.zhuang@antra.com) using Github/Gitlab. 
 Make sure there is README.MD to indicate what did you change/add to the project.
